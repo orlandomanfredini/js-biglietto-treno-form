@@ -42,14 +42,14 @@ elementButton.addEventListener('click', function () {
     
     if (age < 18) {
         
-        elementFinalPrice.value.innerHTML = tariffa
-    
+        elementFinalPrice.value = (tariffa - tariffa * 0.2).toFixed(2)
+     
     } else if (age > 65) {
-        elementFinalPrice.value.innerHTML = tariffa
+        elementFinalPrice.value = (tariffa - tariffa * 0.4).toFixed(2)
         
 
     } else {
-        elementFinalPrice.value.innerHTML = tariffa
+        elementFinalPrice.value = (tariffa).toFixed(2)
     }
     
 });
