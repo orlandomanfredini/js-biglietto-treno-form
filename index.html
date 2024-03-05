@@ -14,8 +14,12 @@
             <label for="km">Km da percorrere</label>
             <input id="distance" name="km" type="text" placeholder="Inserisci km">
 
-            <label for="age">Insersic la tua età</label>
-            <input id="age-user" name="age" type="text" placeholder="Inserisci la tua età...">
+            <label for="age">Seleziona il tipo di sconto</label>
+            <select name="discount" id="discount">
+                <option value="default"> Nessuno</option>
+                <option value="1">Minorenne</option>
+                <option value="2">Over 65</option>
+            </select>
 
             <button id="create-ticket">GENERA </button>
         </div>

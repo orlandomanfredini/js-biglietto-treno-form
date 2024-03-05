@@ -10,7 +10,7 @@
 const elementTrip = document.getElementById('distance'); //element
 
 
-const elementAge = document.getElementById('age-user');  //element
+const elementAge = document.getElementById('discount');  //element
 
 
 const elementButton = document.getElementById('create-ticket'); //element
@@ -19,37 +19,28 @@ const elementButton = document.getElementById('create-ticket'); //element
 const elementFinalPrice = document.getElementById('input-price'); //element
 
 
-let tariffa = elementTrip.value * 0.21; //number
-
-
-
-
-
 
 //  Cliccando sul bottone recuperate i valori delle input e calcolate il prezzo del biglietto.
 
 elementButton.addEventListener('click', function () {
     
-    const age = parseInt(elementAge.value); // number
     const km = parseFloat(elementTrip.value); // float
-
     const tariffa = km * 0.21; // float
 
-    
+     
 
     
-
-    
-    if (age < 18) {
+if (elementAge.value === '1') {
         
         elementFinalPrice.value = (tariffa - tariffa * 0.2).toFixed(2)
      
-    } else if (age > 65) {
+    } else if (elementAge.value === '2') {
         elementFinalPrice.value = (tariffa - tariffa * 0.4).toFixed(2)
         
 
     } else {
         elementFinalPrice.value = (tariffa).toFixed(2)
+    
     }
     
 });
