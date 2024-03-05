@@ -20,6 +20,7 @@ const elementFinalPrice = document.getElementById('input-price'); //element
 
 
 
+
 //  Cliccando sul bottone recuperate i valori delle input e calcolate il prezzo del biglietto.
 
 elementButton.addEventListener('click', function () {
@@ -42,6 +43,14 @@ if (elementAge.value === '1') {
         elementFinalPrice.value = (tariffa).toFixed(2)
     
     }
+
+    const totalKm = document.getElementById('total-km')
+    totalKm.value = km + ' Km'
+    
+    const infoDiscount = document.getElementById('info-discount')
+    infoDiscount.value = elementAge.value
+
+
     
 });
 
