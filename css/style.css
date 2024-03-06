@@ -7,6 +7,10 @@ label{
     display: block;
 }
 
+input{
+    text-align: center;
+}
+
 .container{
     max-width: 900px;
     margin: 0 auto;
@@ -50,7 +54,7 @@ label{
    align-self: center;
 }
 
-.output-ticket{
+.button-group{
     text-align: center;
 }
 
@@ -62,10 +66,17 @@ label{
     border-radius: 10px;
 }
 
+.output-ticket{
+    text-align: center;
+}
+
 .title-output{
     color: black;
+    
 
 }
+
+
 
 .row{
     display: flex;

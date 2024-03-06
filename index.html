@@ -24,17 +24,21 @@
                 <div class="cell-input">
                     <label for="age">Seleziona il tipo di sconto</label>
                     <select name="discount" id="discount">
-                       <option value="default"> Nessuno</option>
+                       <option selected value="default"> Nessuno</option>
                        <option value="Minorenne">Minorenne</option>
                        <option value="Over 65">Over 65</option>
                     </select>
                 </div>
             </div>
             
-            <button id="create-ticket" class="btn-create-ticket">GENERA </button>
+            <div class="button-group">
+                <button id="create-ticket" class="btn-create-ticket">GENERA </button>
+                <button id="reset-btn" class="btn-null">ANNULLA</button>
+            </div>
+            
         </div>
 
-        <h2 class="output-ticket"> INFO Biglietto</h2>
+        <h2 class="output-ticket"> INFO Biglietto</h2>  <!--seconda card con info biglietto-->
         <div class="output-card">
             <h3 class="title-output">INFO PASSEGERO</h3>
             <hr>

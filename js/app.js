@@ -27,6 +27,9 @@ const putName = document.getElementById('put-your-name') ; //element
 
 
 
+
+
+
 //  Cliccando sul bottone recuperate i valori delle input e calcolate il prezzo del biglietto.
 
 elementButton.addEventListener('click', function () {
@@ -62,4 +65,17 @@ if (elementAge.value === 'Minorenne') {
 
     
 });
+
+
+const resetButton = document.getElementById('reset-btn')
+
+resetButton.addEventListener('click', function(){
+     
+    elementTrip.value = ''
+    elementAge.value = ''
+    putName.value = ''
+})
+
+    
+
 
