@@ -1,9 +1,89 @@
 body{
-    background-color: cornflowerblue;
+    background-color: #B9144F;
+    color: white;
 }
 
-h1{
-    color: coral;
+label{
+    display: block;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title-card{
     text-align: center;
+}
+
+.input-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    height: 150px;
+    border-radius: 20px;
+    color: #B9144F;
+    padding: 20px;
     
+}
+
+
+.input-card input{
+    border-radius: 5px;
+    border-color: #B9144F;
+}
+
+.input-user{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cell-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;;
+    
+}
+
+.btn-create-ticket{
+   align-self: center;
+}
+
+.output-ticket{
+    text-align: center;
+}
+
+.output-card{
+    background-color: white;
+    color: #B9144F;
+    padding: 20px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.title-output{
+    color: black;
+
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+.col-4{
+    width: 40%;
+}
+
+.col-4 textarea{
+    border: none;
+}
+
+.col-2{
+    width: 20%;
+}
+
+.col-2 input{
+    border: none;
 }

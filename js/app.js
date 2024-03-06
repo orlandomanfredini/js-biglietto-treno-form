@@ -19,6 +19,12 @@ const elementButton = document.getElementById('create-ticket'); //element
 const elementFinalPrice = document.getElementById('input-price'); //element
 
 
+const putName = document.getElementById('put-your-name') ; //element
+
+
+
+
+
 
 
 //  Cliccando sul bottone recuperate i valori delle input e calcolate il prezzo del biglietto.
@@ -31,16 +37,16 @@ elementButton.addEventListener('click', function () {
      
 
     
-if (elementAge.value === '1') {
+if (elementAge.value === 'Minorenne') {
         
-        elementFinalPrice.value = (tariffa - tariffa * 0.2).toFixed(2)
+        elementFinalPrice.value = (tariffa - tariffa * 0.2).toFixed(2) + ' €'
      
-    } else if (elementAge.value === '2') {
-        elementFinalPrice.value = (tariffa - tariffa * 0.4).toFixed(2)
+    } else if (elementAge.value === 'Over 65') {
+        elementFinalPrice.value = (tariffa - tariffa * 0.4).toFixed(2) + ' €'
         
 
     } else {
-        elementFinalPrice.value = (tariffa).toFixed(2)
+        elementFinalPrice.value = (tariffa).toFixed(2) + ' €'
     
     }
 
@@ -49,6 +55,9 @@ if (elementAge.value === '1') {
     
     const infoDiscount = document.getElementById('info-discount')
     infoDiscount.value = elementAge.value
+
+    const outputName = document.getElementById('user-name')
+    outputName.value = putName.value
 
 
     
