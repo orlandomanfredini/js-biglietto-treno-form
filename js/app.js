@@ -92,19 +92,21 @@ elementButton.addEventListener('click', function () {
 
 // se l'opzione sconto selezionata è di valore minorenne sconto 20%
 if (elementAge.value === 'Minorenne') {
-        
-        elementFinalPrice.innerHTML ='€ ' + tariffa - (tariffa * 0.2).toFixed(2)
+        let mdPrice = tariffa - tariffa * 0.2
+        elementFinalPrice.innerHTML = mdPrice.toFixed(2) + ' €'
      
 
     // altrimenti se ozione sconto selezionata è di valore over 65 sconto 40%
     } else if (elementAge.value === 'Over 65') {
-        elementFinalPrice.innerHTML = '€ ' + tariffa - (tariffa * 0.4).toFixed(2)
+        let minPrice = tariffa - tariffa * 0.4
+        elementFinalPrice.innerHTML = minPrice.toFixed(2) + ' €'
         
 
 
     // altrimenti tariffa standard
     } else {
-        elementFinalPrice.innerHTML = '€ ' + tariffa.toFixed(2)
+        let maxPrice = tariffa
+        elementFinalPrice.innerHTML = maxPrice.toFixed(2) + ' €'
     
     }
 
